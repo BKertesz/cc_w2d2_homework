@@ -1,7 +1,8 @@
 class River
+  attr_reader :fishes
   def initialize(name,fishes)
     @name = name
-    @fishes = fishes
+    @fishes = fishes || []
   end
 
   def fish_count()
