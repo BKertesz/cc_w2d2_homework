@@ -1,5 +1,5 @@
 class River
-  attr_reader :fishes
+  attr_accessor :fishes
   def initialize(name,fishes)
     @name = name
     @fishes = fishes || []
@@ -13,4 +13,5 @@ class River
     fish = Fish.new(type)
     @fishes << fish
   end
+
 end
